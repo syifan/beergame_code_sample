@@ -1,10 +1,12 @@
 from game import Game
 from game_controller import GameController
+from customer_model import CustomerModel
 
 
 def main():
     game = Game()
-    controller = GameController(game)
+    cm = CustomerModel()
+    controller = GameController(game, cm)
 
     controller.play()
 

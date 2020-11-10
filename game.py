@@ -11,6 +11,13 @@ class Game:
     def __init__(self):
         self.num_rounds = 24
         self.stages = []
+        self.stacks = [
+            None, None, None, None,
+            None, None, None, None,
+            None, None, None, None,
+            None, None, None, None,
+            None,
+        ]
 
         self.stages.append(Manufacturer("Manufacturer"))
         self.stages.append(Distributer("Distributor"))
